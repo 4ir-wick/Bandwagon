@@ -1,3 +1,4 @@
+//Eric Stevens
 before();
 
 async function before() {
@@ -149,6 +150,8 @@ $(window).scroll(function() {
 		}
 	}
 });
+//Eric Stevens
+
 //////////////////////////////ender search fuction
 function userSearch()
 {

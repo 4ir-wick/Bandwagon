@@ -1,3 +1,4 @@
+//Eric Stevens
 var dbUser = undefined;
 var storRef = undefined;
 
@@ -160,3 +161,4 @@ function listEdit(button) {
 		list.removeAttr("beingEdited");
 	}
 }
+//Eric Stevens

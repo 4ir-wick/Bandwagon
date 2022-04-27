@@ -33,7 +33,7 @@ body {
 /****************************************- HOME PAGE -************************************************/
 
 
-/****************************************- ss(reworked by eric)- PROFILE PAGE -************************************************/
+/*************************- Eric Stevens (Followed original design by Sam in the Archive)- PROFILE PAGE -*********************************/
 #profile {
   display: flex;
   flex-wrap: wrap;
@@ -144,6 +144,8 @@ body {
 #editButton:after {
   content: "edit";
 }
+/*************************- Eric Stevens (Followed original design by Sam in the Archive)- PROFILE PAGE -*********************************/
+
 /*******************************- ss- SEARCH PAGE *******************************/
 
 /* .search {
@@ -359,7 +361,7 @@ span.psw {
 }
 
 
-/*top bar - eric s. (:*/
+/*Eric Stevens - Top Bar*/
 #topBar {
   background-color: royalblue;
   text-align: center;
@@ -396,8 +398,9 @@ span.psw {
   min-height: 100%;
   height: 0;
 }
+/*Eric Stevens - Top Bar*/
 
-/*fit*/
+/*Eric Stevens - Profile icon and background image*/
 #fit {
   height: 25vh;
   display: grid;
@@ -449,6 +452,7 @@ span.psw {
   height: 0;
   object-fit: cover;
 }
+/*Eric Stevens - Profile icon and background image*/
 
 /******************************- MEDIA QUERIES -******************************/
 @media screen and (max-width: 1250px) {
