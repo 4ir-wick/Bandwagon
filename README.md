@@ -2,6 +2,7 @@
 
 My major contributions include the entirety of:  
 Website/profile.js  
+Website/utilities.js  
 Website/ProfilePage.html  
 Website/Includable/topBar.html  
 Website/Includable/fit.html  
