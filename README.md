@@ -10,7 +10,7 @@ The related css for each page in Website/styles.css
 Contributions are marked by comments with my name (Eric Stevens) encapsulating them.
 
 Should be tested on a local host or actual host  
-Still viewable without a host  
+Still viewable without a host by opening the html files  
 Link to a hosted version (only exists for a short time after this commit)  
 http://ec2-3-83-148-214.compute-1.amazonaws.com/login.html  
 
