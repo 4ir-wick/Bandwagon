@@ -1,0 +1,539 @@
+/*everthing*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial;
+  word-break: normal;
+}
+
+/*tags*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  background-color: #e7fffe;
+}
+
+/****************************************- HOME PAGE -************************************************/
+
+
+/****************************************- ss(reworked by eric)- PROFILE PAGE -************************************************/
+#profile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#profile article {
+  flex-grow: 100;
+}
+
+#profile aside {
+  background-color: #47e9e3;
+  padding: 1rem;
+  flex-grow: 1;
+  flex-shrink: 0;
+  /* display: grid;
+  grid-auto-flow: column; */
+}
+
+#profile aside > ul {
+  /*margin-bottom: 1rem;*/
+}
+
+#profile header {
+  background-color: #c999ff;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  grid-gap: 1rem;
+}
+
+#profile header > button {
+  padding: 1rem;
+  background-color: red;
+  color: white;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#profile header > a {
+  padding: 1rem;
+  background-color: cyan;
+  color: black;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#profile header #editProfile {
+  background-color: #04AA6D;
+}
+
+#profile section {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#profile .music_sample {
+  background-color: #4c01a1;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  column-gap: 1rem;
+}
+
+#profile .music_sample h3 {
+  margin-bottom: 1rem;
+}
+
+#profile .music_sample .cover {
+  min-height: 100%;
+  height: 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+#profile .music_sample .cover div {
+  min-height: 0;
+  max-height: 100%;
+  background-color: #c401a1;
+  border-radius: 1rem;
+  padding: 0.25rem;
+  aspect-ratio: 1;
+}
+
+#buttonContainer {
+  width: 100%;
+  position: relative;
+}
+
+#editButton {
+  background-color: salmon;
+  padding: 1rem 0;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+#editButton:after {
+  content: "edit";
+}
+/*******************************- ss- SEARCH PAGE *******************************/
+
+/* .search {
+  background-color: #c401a1;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+} */
+
+/***** for search filter *****/
+.search {
+  text-align: center;
+  color: rgb(98, 9, 105);
+  padding: .3rem;
+  padding-top: .5rem;
+}
+
+.filter {
+  width: 15%;
+  float: left;
+  color: white;
+  background-color: rgb(98, 9, 105);
+  border: solid white 5px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  /* width: minmax(30rem, 1fr); */
+}
+
+/* must specify or else it wont change to white. ._. */
+.filter article {
+  text-align: left;
+  margin: .4rem;
+  /* grid stuff */
+  /* display: grid;
+  grid-template-columns:
+      repeat(auto-fit, minmax(10rem, 1fr)) */
+}
+
+.filter h2 {
+  margin-top: 5px;
+}
+
+#user {
+  height: 1.5rem;
+  width: 10rem;
+  text-align: left;
+  padding:0;
+  color: rgb(98, 9, 105);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/***** styling for user tabs *****/
+/* each of the user boxes */
+.user {
+  text-align: center;
+  color: #5D0064;
+  background-color: rgb(221, 174, 255);
+  border: solid #5D0064 5px;
+  border-radius: 15px;
+  margin: .2rem;
+
+  /* grid stuff */
+  display: grid;
+  grid-template-columns:
+      repeat(auto-fit, minmax(10rem, 1fr))
+}
+
+.user:hover {
+  color: #84008E;
+  background-color: #F5DFFF;
+  border: solid #84008E 5px;
+  filter: brightness(1);
+}
+.user:hover .individual img {
+  background-color: #8391ff;
+}
+
+.user a:visited {
+  color: #2F0033;
+  background-color: #CC84FF;
+  border: solid #2F0033 5px;
+}
+
+.user a:visited .individual img {
+  background-color: #374efc;
+}
+
+.gridElements {
+  display: grid;
+  grid-template-columns:
+      repeat(auto-fit, minmax(10rem, 1fr))
+}
+
+/* .stack {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1/2;
+} */
+
+.individual img {
+  width: 100px;
+  /* border: solid rgb(98, 9, 105) 5px; */
+  background-color: #5e70ff;
+  /* #c401a1; */
+  border-radius: 25px;
+  padding: 0.25rem;
+  /* margin: .5rem; */
+}
+
+.user h2 {
+  line-height: 0px;
+  margin: 1rem;
+}
+
+.search h1 {
+  margin: 1rem;
+}
+/* .individual {
+  line-height: 0px;
+} */
+
+/*******************************- ss- USER ORG. PAGE *******************************/
+
+.orgsTop {
+  background-color: #5D0064;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.orgsTop h1 {
+  color: white;
+  font-size: 40px;
+  display: flex;
+  place-items: center;
+  place-content: center;
+}
+
+.orgsTop img {
+  /* padding: 10px; */
+  width: 150px;
+  background-color: #c401a1;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.orgs {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+
+
+/****************************************- LOGIN PAGE -************************************************/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.container button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.logo {
+  width: 20%;
+  border-radius: 30%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+/*top bar - eric s. (:*/
+#topBar {
+  background-color: royalblue;
+  text-align: center;
+  height: 15vh;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+#topBar h1 {
+  align-self: center;
+}
+
+#topBar nav {
+  background-color: cyan;
+  display: grid;
+  grid-template-columns: auto repeat(3, 1fr) auto;
+  width: 100%; /*for sticky*/
+  height: calc(15vh / 2); /*for sticky*/
+  z-index: 10;
+}
+
+#topBar nav a {
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#topBar nav a:hover {
+  filter: brightness(0.75);
+}
+
+#topBar nav img {
+  min-height: 100%;
+  height: 0;
+}
+
+/*fit*/
+#fit {
+  height: 25vh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 1rem 0 1rem 1rem;
+  position: relative;
+}
+
+#fit > * {
+  height: 100%;
+}
+
+#fit > :nth-child(1) {
+  min-width: calc(100% + 1rem);;
+  min-height: calc(100% + 1rem);
+  grid-column: 1/-1;
+  grid-row: 1;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+}
+
+#fit > :nth-child(2) {
+  grid-column: 1/1;
+  grid-row: 1;
+}
+
+#fit #bgImage {
+  background-color: #99fffc;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#fit #icon {
+  background-color: #9900ff;
+  min-height: 100%;
+  height: 0;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+#fit #icon img {
+  width: 100%;
+  min-height: 100%;
+  height: 0;
+  object-fit: cover;
+}
+
+/******************************- MEDIA QUERIES -******************************/
+@media screen and (max-width: 1250px) {
+  #user {
+    width: 9rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+      /* for search page */
+  .filter {
+    font-size: 18px;
+  }
+  .filter h2 {
+    text-align: left;
+    margin-left: 1rem;
+  }
+  #user {
+    width: 8rem;
+  }
+}
+/* ss- added media queries for user search page */
+@media screen and (max-width: 1000px) {
+    /* for search page */
+  .filter {
+      font-size: 17px;
+  }
+
+  #user {
+    width: 7rem;
+  }
+}
+
+@media screen and (max-width: 910px) {
+    /* for search page */
+  .filter {
+      font-size: 15px;
+  }
+
+  #user {
+    width: 6rem;
+  }
+}
+
+/* @media screen and (max-width: 760px) {
+  .filter {
+      font-size: 15px;
+  }
+} */
+
+@media screen and (max-width: 830px) {
+  /* for search page */
+  .filter {
+      float: none;
+      width: 100%;
+      font-size: 18px;
+  }
+  .filter h2 {
+    text-align: center;
+    padding-bottom: .2rem;
+  }
+  #user {
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .search {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search {
+    font-size: 20px;
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}

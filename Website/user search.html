@@ -1,0 +1,160 @@
+<!-- ss -->
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title> search user </title>
+        <link rel="styleSheet" type="text/css" href="styles.css">
+        <script src="Libraries/jquery-3.6.0.min.js"></script>
+        <script src="utilities.js"></script>
+        <script src="user_search.js"></script>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div include="topBar.html"></div>
+        <h1 class="search"> Search for Musicians/Bands! </h1>
+    
+        <div class="filter grid">
+            <h2> FILTER </h2>
+
+            <div class="gridElements">
+
+                <article>
+                    <form action="">
+                        <label for="user"> Name: </label>
+                        <input type="text" id="searchUser" name="user" placeholder="user/band name:"><br>
+                    </form>
+                </article>
+
+                <article>
+                    <p> Band/Musician? </p>
+                    <form>
+                        <select id="type of user">
+                            <option value="Band"> Band </value>
+                            <option value="musician"> Musician </value>
+                        </select>
+                    </form>
+                </article>
+
+                <article>
+                    <p> Instrument </p>
+                    <form>
+                        <select id="instrument">
+                            <option value="drums"> Drums </value>
+                            <option value="base"> Base </value>
+                            <option value="violin"> Violin </value>
+                            <option value="guitar"> Guitar </value>
+                            <option value="trumpet"> Trumpet </value>
+                            <option value="piano"> Piano </value>
+                            <option value="banjo"> Banjo </value>
+                        </select>
+                    </form>
+                </article>
+
+                <article>
+                    <p> Genres </p>
+                    <input type="checkbox" id="rock" name="rock" value="rock">
+                    <label for="rock"> Rock </label><br>
+                    <input type="checkbox" id="pop" name="pop" value="pop">
+                    <label for="pop"> Pop </label><br>
+                    <input type="checkbox" id="country" name="country" value="country">
+                    <label for="country"> Country </label><br>
+                    <input type="checkbox" id="jazz" name="jazz" value="jazz">
+                    <label for="jazz"> Jazz </label><br>
+                    <input type="checkbox" id="electronic" name="electronic" value="electronic">
+                    <label for="electronic"> Electronic </label><br>
+                    <input type="checkbox" id="soul" name="soul" value="soul">
+                    <label for="soul"> Soul </label><br>
+                    <input type="checkbox" id="indie" name="indie" value="indie">
+                    <label for="indie"> Indie </label><br>
+                    <input type="checkbox" id="heavy metal" name="heavy metal" value="heavy metal">
+                    <label for="heavy metal"> Heavy Metal </label><br>
+                </article>
+            </div>
+            <!-- put a function for onclick -->
+            <input type="button" value="Submit" title="yes" onclick="userSearch()"> 
+        </div>
+    
+        <div class="grid">
+            <a class="user" onclick="loadDataProfile()">
+                <div class="individual stack">
+                    <h2 id="displayName"> Username</h2>
+                    <img src="pfp.jpg" id="profileImg">
+                </div>
+                <div class="instrument stack">
+                    <h2> Instrument: </h2>
+                    <p id="instrument1"> instrument </p>
+                    <p id="instrument2"> instrument </p>
+                </div>
+                <div class="genre stack">
+                    <h2> Genre: </h2>
+                    <p id="genre1"> genre </p>
+                    <p id="genre2"> genre </p>
+                </div>
+            </a>
+            
+            <a class="user" href="ProfilePage.html">
+                <div class="individual stack">
+                    <h2> Username</h2>
+                    <img src="pfp.jpg" alt="teriteri daishori(?)">
+                </div>
+                <div class="instrument stack">
+                    <h2> Instrument: </h2>
+                    <p> instrument </p>
+                </div>
+                <div class="genre stack">
+                    <h2> Genre: </h2>
+                    <p> genre </p>
+                </div>
+            </a>
+
+            <a class="user" href="ProfilePage.html">
+                <div class="individual stack">
+                    <h2> Username</h2>
+                    <img src="pfp.jpg" alt="teriteri daishori(?)">
+                </div>
+                <div class="instrument stack">
+                    <h2> Instrument: </h2>
+                    <p> instrument </p>
+                </div>
+                <div class="genre stack">
+                    <h2> Genre: </h2>
+                    <p> genre </p>
+                </div>
+            </a>
+
+            <a class="user" href="ProfilePage.html">
+                <div class="individual stack">
+                    <h2> Username</h2>
+                    <img src="pfp.jpg" alt="teriteri daishori(?)">
+                </div>
+                <div class="instrument stack">
+                    <h2> Instrument: </h2>
+                    <p> instrument </p>
+                </div>
+                <div class="genre stack">
+                    <h2> Genre: </h2>
+                    <p> genre </p>
+                </div>
+            </a>
+            
+            <a class="user" href="ProfilePage.html">
+                <div class="individual stack">
+                    <h2> Username</h2>
+                    <img src="pfp.jpg" alt="teriteri daishori(?)">
+                </div>
+                <div class="instrument stack">
+                    <h2> Instrument: </h2>
+                    <p> instrument </p>
+                </div>
+                <div class="genre stack">
+                    <h2> Genre: </h2>
+                    <p> genre </p>
+                </div>
+            </a>
+            
+        </div>
+    </body>
+    </html>

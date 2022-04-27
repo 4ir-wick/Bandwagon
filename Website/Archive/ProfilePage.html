@@ -1,0 +1,83 @@
+<!-- ss- Bandwagon Home Page -->
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title> Profile Page </title>
+    <link rel="styleSheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="bandwagonFavicon.ico" />
+    <script src="Libraries/jquery-3.6.0.min.js"></script>
+	<script src="utilities.js"></script>
+</head>
+<body>
+    <div include="topBar.html"></div>
+    <div class="BGimage">
+        <p> BG Image here </p>
+        <input type='file' alt="pfp" />
+        <script src="profile.js"></script>
+        <img id="myImg" src="#">
+    </div>
+
+    <!-- ss- this is the side bar that contains the info about the user -->
+    <div class="sideInfo">
+        <div class="sideCategory">
+            <p class="category"> Genre: <span id="genre"> genre </span> </p>
+            <p class="category"> Instrument: <span id="instrument"> instrument </span> </p>
+            <p class="category"> Location: <span id="location"> country, state </span> </p>
+            <div class="category">
+                <p> Social Media: </p>
+                <a id="twitter"> Twitter </a><br>
+                <a id="youtube"> Youtube </a><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- ss- div is for entire bio section: username, descr. -->
+    <div class="bio">
+        <div class="topUser">
+            <p class="username"> username </p>
+            <!-- ss- the reason for the top User div was if we wanted social media on the top R corner instead.
+                  if this is what's preferred, it would go right where this comment is. -->
+        </div>
+
+        <p class="bioTXT">
+            hi this is the bio in which text is placed.
+            If you couldn't tell this is placeholder text that can easily be changed.
+            To change this text with javascript, it's actually quite easy.
+            As long as you add an ID to this p element, you can change the contents
+            with a js function.
+        </p>
+        <button type="submit" id="editProfile" onclick="redirectChangeProfile()">Edit Profile</button>
+        <script src="profile.js"></script>
+    </div>
+
+    <!-- ss- add media queries for smaller screens or else it gets dropped to bttm-->
+    <article>
+        <div class="content">
+            <div class="cover">
+                <img src="pfp.jpg" id="albumcover" alt="cover image for song" title="Teri Teri Sekai de Ichiban Kawaii!"> <!-- remove teriteri and i remove you :) -->
+            </div>
+            <h1> TITLE </h1>
+            <audio controls>
+                <source src="song.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </article>
+
+    <!-- ss- test post of song :) -->
+    <article>
+        <div class="content">
+            <div class="cover">
+                <img src="pfp.jpg" id="albumcover" alt="cover image for song" title="Teri Teri Sekai de Ichiban Kawaii!"> <!-- remove teriteri and i remove you :) -->
+            </div>
+            <h1> TITLE </h1>
+            <audio controls>
+                <source src="song.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </article>
+
+
+
+</body>
+</html>

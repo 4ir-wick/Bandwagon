@@ -1,0 +1,86 @@
+﻿<!-- jad Bandwagon Vendor Page-->
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Venue Page</title>
+    <link rel="styleSheet" type="text/css" href="VenueStyles.css">
+    <script src="Libraries/jquery-3.6.0.min.js"></script>
+    <script src="utilities.js"></script>
+</head>
+<body> <!-- Can't implement topBar.html, needs fixing -->
+    <!-- Image that is in the background of the profile page, behind the profile picture -->
+    <div include ="topBar.html"></div>
+    <div include="fit.html"></div>
+
+    <!-- Container for the whole profile page, enables the use of CSS grid to format elements -->
+    <div class="profileWrapper">
+
+        <!-- Leftmost column, used to hold contact information and links to venue's social media -->
+        <!-- Need to redesign this as a set of unordered lists and li elements -->
+        <div class="socialNetworks">
+            <h2>Location</h2>
+            <ul>
+                <li>Place</li>
+            </ul>
+            <h2>Facebook</h2>
+            
+            <h2>Twitter</h2>
+        </div>
+
+        <!-- Container for the middlemost of the profile page, stores bio and additional venue information -->
+        <div class="centerWrapper">
+            <div class="profileBox" id="venueBioTXT">
+                <h3>Venue Name</h3>
+                <p>
+                    Bio section where the venue owner can write about their establishment, the events they plan on hosting, and what sort of musicians they're looking for
+                </p>
+                
+            </div>
+            <div class="eventHolder">
+                <h1>Upcoming Events</h1>
+                <div class="eventTable">
+                    <!-- Element at the top of the Event Table, marks sections (event name, date, genre) -->
+                    <div class="eventHeader"> 
+                        <h3>Event name</h3>
+                        <h3>Date</h3>
+                        <h3>Genre(s) Wanted</h3>
+                    </div>
+
+                    <!-- Entries in the Event table, currently hard-coded but should hopefully be retrieved
+                        from the database in the near future -->
+                    <div class="eventEntry">
+                        <p>Dave's Bar and Grill Open Mic Night</p>
+                        <p>May 15th, 2022</p>
+                        <p>Any</p>
+                    </div>
+
+                    <div class="eventEntry">
+                        <p>25th Annual Potluck</p>
+                        <p>June 5th, 2022</p>
+                        <p>Swing</p>
+                    </div>
+
+                    <div class="eventEntry">
+                        <p>Local Jazz Exhibition</p>
+                        <p>June 22nd, 2022</p>
+                        <p>Jazz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Leftmost column, container for images of the venue, similar to Google Maps,
+            but uploaded by the venue owner -->
+        <div class="venueImages">
+            <h2>Images of the venue in this column</h2>
+            <img id="image_1" src="https://live.staticflickr.com/7429/9332810437_dbe522980d_b.jpg" />
+            <img id="image_2" src="https://live.staticflickr.com/5218/5526839767_8447099faa_b.jpg" />
+            <img id="image_3" src="https://live.staticflickr.com/604/32255598460_274caa2db0_b.jpg" />
+        </div>
+    </div>
+
+
+</body>
+</html>

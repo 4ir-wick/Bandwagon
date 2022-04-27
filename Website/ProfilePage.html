@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <title>Profile</title>
+    <script src="Libraries/jquery-3.6.0.min.js"></script>
+    <script src="utilities.js"></script>
+    <script src="profile.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+    <div include="topBar.html"></div>
+    <div include="fit.html"></div>
+    <div id="profile">
+        <aside>
+            <div>
+                <h3>Instruments</h3>
+                <ul id="instruments">
+                    <li>Instrument 1</li>
+                    <li>Instrument 2</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Genres</h3>
+                <ul id="genres">
+                    <li>Genre 1</li>
+                    <li>Genre 2</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Location</h3>
+                <ul id="location">
+                    <li>Location</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Social Media</h3>
+                <ul id="socialMedia">
+                    <li><a href="#">Social Link 1</a></li>
+                    <li><a href="#">Social Link 2</a></li>
+                </ul>
+            </div>
+        </aside>
+        <article>
+            <header>
+                <div>
+                    <h2 id="name">Display Name</h2>
+                    <p id="bio">Bio</p>
+                </div>
+                <a href="user orgs.html">View Orgs</a>
+                <button id="editProfile">Edit Profile</button>
+                <button onclick="deleteAccount()">Delete Account</button>
+            </header>
+            <section>
+                <div class="music_sample">
+                    <div class="cover">
+                        <div>
+                            <img src="pfp.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Shiro Sagisu - II Air</h3>
+                        <audio controls>
+                            <source src="music-samples/Air.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <div class="music_sample">
+                    <div class="cover">
+                        <div>
+                            <img src="pfp.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>David Oistrakh - Clair de Lune</h3>
+                        <audio controls>
+                            <source src="music-samples/Clair de Lune.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+                <div class="music_sample">
+                    <div class="cover">
+                        <div>
+                            <img src="pfp.jpg">
+                        </div>
+                    </div>
+                    <div>
+                        <h3>The Jimi Hendrix Experience - All Along The Watchtower</h3>
+                        <audio controls>
+                            <source src="music-samples/All Along The Watchtower.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </div>
+</body>
+</html>

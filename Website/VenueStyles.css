@@ -1,0 +1,75 @@
+﻿* {
+    word-break: break-all;
+}
+
+.bannerImage {
+    width: 100%;
+    height: 225px;
+    background-color: #A8A8A8;
+}
+
+.profileWrapper {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.profileBox {
+    background-color: #c999ff;
+    padding: 5%;
+}
+
+.eventHolder {
+    background-color: blueviolet;
+    padding: 2%;
+    display: grid;
+}
+
+.eventTable {
+    background-color: darkmagenta;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    display:grid;
+    grid-template-rows: 1fr;
+    padding-bottom: 1rem;
+}
+
+.eventHeader {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    text-align: center;
+}
+
+.eventEntry {
+    word-wrap: break-word;
+    background-color: #EEA7C6;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding: 0.5rem;
+}
+
+.socialNetworks {
+    background-color: #47e9e3;
+    text-align: center;
+    row-gap: 2%;
+}
+
+h2 {
+    margin-top: 1rem;
+}
+
+/* Currently unused */
+.socialContainer {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: #00a8a3;
+    text-align:center;
+    height:10%;
+}
+
+.venueImages {
+    background-color: cornflowerblue;
+}
